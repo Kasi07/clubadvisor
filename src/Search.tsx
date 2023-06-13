@@ -19,7 +19,7 @@ function Search(this: any){
         }
 
       axios
-          .get("localhost8080/findClubbyName", {
+          .get("http://localhost:8080/GetAllCLubs", {
             params: { search: inputValue.value },
           })
           .then((response) => {

@@ -1,17 +1,27 @@
+import axios from "axios";
 import "./Club.css";
 
 function Club() {
 
-  // function initMap() {
-
-  //   var map = new google.maps.Map(document.getElementById('map'), {
-  //     zoom: 8,
-  //     center: {lat: -34.397, lng: 150.644}
-  //   });
-  // }
+  const loadClub = (event: { preventDefault: () => void }) => {
+    
+    event.preventDefault(); // Prevent form submission
+  axios
+      .get("http://localhost:8080/FindClubByName/Sputnik V1", {
+      })
+      .then((response) => {
+        // Handle the response from the server
+        console.log(response.data);
+      })
+      .catch((error) => {
+        // Handle any errors that occurred during the request
+        console.error(error);
+      });
+  };
 
   return (
     <div>
+      loadClub();
       <div className="grid">
         <header id="Header">Mannheimer Studentenclub</header>
         <article>Dummy Daten, hier kommt die Clubbeschreibung hin</article>

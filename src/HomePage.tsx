@@ -24,18 +24,20 @@ function HomePage() {
   setHomeState(false)
   setSearchState(true)
   axios
-      .get("https://httpbin.org/get", {
-        params: { search: inputValue.value },
+      .get("http://localhost:8080/GetAllCLubs", {
+        //params: { search: inputValue.value },
       })
       .then((response) => {
+        const responsedata = response.data;
         // Handle the response from the server
-        console.log(response.data);
+        console.log(responsedata);
       })
       .catch((error) => {
         // Handle any errors that occurred during the request
         console.error(error);
       });
   };
+ 
 
   return (
     <div>
