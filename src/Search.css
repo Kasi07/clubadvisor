@@ -1,0 +1,36 @@
+header { grid-area: header; 
+    background-color: #1d3c45;
+    color: white;
+     }
+
+.d-flex{
+    float:right;
+    margin-right: 10px;
+}
+
+aside {grid-area: sides;
+    background-color: #83C5BE;
+    border-right:2px solid #1d3c45;
+    border-left: 2px solid #1d3c45;
+}
+
+article {grid-area: article;
+    background-color: #fff3ef; }
+    
+.background {
+    display: grid;
+    grid-template-columns: 15vw 70vw 15vw;
+    grid-template-rows:  10vh 90vh;
+
+    grid-template-areas: 
+    "header header header"
+    "article article article"
+    
+    }
+.background > *
+    {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    }

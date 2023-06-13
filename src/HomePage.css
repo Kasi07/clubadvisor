@@ -1,0 +1,32 @@
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #83C5BE;
+    color: black;
+  }
+  
+.box {
+    
+    width: 80vw;
+    height: 80vh;
+    background-color: #EDF6F9;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #70AD47;
+    transform: translate(-50%, -50%);
+}
+  
+  .centered-content {
+    text-align: center;
+  }
+  
+  .search-bar {
+    margin-top: 20px;
+  }
+  
