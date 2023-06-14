@@ -37,6 +37,7 @@ function HomePage() {
         console.error(error);
       });
   };
+  
  
 
   return (

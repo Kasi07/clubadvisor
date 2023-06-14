@@ -4,7 +4,8 @@ header { grid-area: header;
 
 nav { grid-area: nav;
 background-color: #2ab5ae;
-border: 2px solid #8ae7a0;}
+border: 2px solid #8ae7a0;
+margin-right: 20px;}
 
 article {grid-area: article;
     background-color: #EDF6F9; }
@@ -13,7 +14,9 @@ aside {grid-area: aside;
     background-color: #83C5BE;
     border-right: 2px solid #8ae7a0;
     border-left: 2px solid #8ae7a0;
-    border-bottom: 2px solid #8ae7a0; }
+    border-bottom: 2px solid #8ae7a0;
+    margin-right: 20px;
+    }
 
 
 footer {grid-area: footer;
@@ -29,7 +32,7 @@ text-align: left;
 .grid {
 display: grid;
 grid-template-columns: 80vw 20vw;
-grid-template-rows:  10vh 8vh 77vh 30vh;
+grid-template-rows:  8vh 8vh 79vh 30vh;
 
 grid-template-areas: 
 "header header"

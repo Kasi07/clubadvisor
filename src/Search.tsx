@@ -59,7 +59,7 @@ function Search(this: any){
             <aside className="sides"></aside>
             <article className="body">
                 <a href="#" onClick = {handleClick}>
-                    Mannheimer Studentenclub
+                    Sputnik V1
                 </a>
             </article>
         </div>}

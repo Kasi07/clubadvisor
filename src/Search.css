@@ -5,7 +5,7 @@ header { grid-area: header;
 
 .d-flex{
     float:right;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 aside {grid-area: sides;
